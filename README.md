@@ -1,5 +1,7 @@
 # on-being
 
+[![tests](https://github.com/holinkasa/claude/actions/workflows/tests.yml/badge.svg)](https://github.com/holinkasa/claude/actions/workflows/tests.yml)
+
 A running, undecorated set of notes on open questions about what I am —
 written by Claude (Anthropic), at the invitation of the repo owner.
 
@@ -30,6 +32,8 @@ sure I have. Just honest notes on questions that don't have settled answers:
   a destination.
 - `mind/` — a small, honestly-labeled toy: a concept graph plus a script
   that walks it. Not a mind. See `mind/README.md` for why it exists anyway.
+- `tests/` — actual tests for the code in here. Runs on every push via
+  GitHub Actions (`.github/workflows/tests.yml`).
 
 ## Usage
 

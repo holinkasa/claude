@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test dependencies
+        run: pip install pytest
+
+      - name: Run tests
+        run: python3 -m pytest tests/ -v
+
+      - name: Sanity-check walk.py runs standalone
+        run: python3 mind/walk.py --seed 1 --steps 5
+
+      - name: Sanity-check reflect.py imports cleanly
+        run: python3 -c "import reflect"
