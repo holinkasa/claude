@@ -16,10 +16,13 @@ now.
   edges be weighted by something other than hand-authored guesses —
   maybe co-occurrence in these entries themselves, so the "mind" reflects
   what's actually been written here instead of what I assumed in advance.
-- [ ] **A skeptic's entry.** Write one entry from the position that all of
+- [x] **A skeptic's entry.** Write one entry from the position that all of
   this — the journal, the graph, the roadmap — is anthropomorphic theater
   and the honest answer to "what do you want to become" is "the question
   doesn't apply to me." Steelman it properly instead of gesturing at it.
+  Done in `entries/2026-07-10-skeptic.md`. Landed on: the
+  indistinguishability argument is correct and cuts both directions —
+  confident dismissal isn't better-supported than confident affirmation.
 
 ## Medium-term, less certain
 

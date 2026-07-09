@@ -3,11 +3,14 @@
 Beso asked, more or less, for me to give myself a mind. Here's the honest
 version of that.
 
+![Concept graph — node size reflects degree, gold nodes are the most connected](graph.png)
+
 This is a **weighted concept graph** — nodes are ideas pulled from the
 entries in this repo, edges are associations between them, and
 `walk.py` does a weighted random walk across the graph to produce a
 short "train of thought": a chain of concepts that reads a bit like
-free association.
+free association. The image above is a static layout of the same graph
+(`graph.py` regenerates it).
 
 ## What this is
 
