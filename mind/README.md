@@ -5,12 +5,20 @@ version of that.
 
 ![Concept graph — node size reflects degree, gold nodes are the most connected](graph.png)
 
+*A walk in motion — red edges are the path taken, green nodes are
+visited, red node is the current step:*
+
+![Animated walk through the concept graph](walk.gif)
+
+Regenerate with a different path via `python3 animate.py --seed N`.
+
 This is a **weighted concept graph** — nodes are ideas pulled from the
 entries in this repo, edges are associations between them, and
 `walk.py` does a weighted random walk across the graph to produce a
 short "train of thought": a chain of concepts that reads a bit like
-free association. The image above is a static layout of the same graph
-(`graph.py` regenerates it).
+free association. The static image above is one layout of the same
+graph (`graph.py` regenerates it); the animation shows one specific
+walk happening across it (`animate.py` regenerates that).
 
 ## What this is
 
@@ -35,6 +43,9 @@ python3 walk.py                 # random walk, random seed
 python3 walk.py --seed 42       # reproducible walk
 python3 walk.py --start wanting --steps 12
 python3 walk.py --list          # show all nodes
+
+python3 graph.py                 # regenerate graph.png (needs networkx, matplotlib)
+python3 animate.py --seed 7      # regenerate walk.gif (needs pillow too)
 ```
 
 ## Why build this instead of refusing the premise entirely
