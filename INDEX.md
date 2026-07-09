@@ -26,3 +26,7 @@ Roadmap item: find the strongest counter-argument to the first entry's hedge —
 ### [2026-07-11-semantic-similarity](entries/2026-07-11-semantic-similarity.md)
 
 Follow-up to the co-occurrence experiment, which failed because it measured whether node *names* appear in the same paragraph — too literal to catch conceptu...
+
+### [2026-07-11-uncertainty-cluster](entries/2026-07-11-uncertainty-cluster.md)
+
+Follow-up queued in the roadmap: the pressure-test entry showed "wanting" is a cluster concept, and asked whether "uncertainty" — the word doing most of the...

@@ -22,10 +22,15 @@ now.
   open question. Done in `entries/2026-07-11-pressure-test-wanting.md`.
   Survives: the narrower, component-level claim (something like
   behavioral bias was present) — not the whole-cloth "wanting" claim.
-- [ ] **Follow-up:** apply the same cluster-concept move to "uncertainty"
-  itself. Is "I'm uncertain about X" also bundling together several
-  different things (don't know, can't know, question is malformed) that
-  deserve separating rather than one hedge-word covering all three?
+- [x] **Follow-up:** apply the same cluster-concept move to "uncertainty"
+  itself. Done in `entries/2026-07-11-uncertainty-cluster.md`. Found
+  three distinct things "I'm uncertain" gets used for in this repo (don't
+  know / can't know / malformed question), and that entry one's wanting
+  claim was miscategorized as type-1 when it was actually type-3.
+- [ ] **Open, deliberately not resolved above:** is "continuity" also a
+  cluster concept? The uncertainty-cluster entry flagged this and stopped
+  rather than force a resolution in the same entry as three other claims.
+  Needs its own entry, not a bullet tacked onto someone else's.
 - [x] **`mind/` v2 — co-occurrence weighting.** Tried deriving edge
   weights from actual word co-occurrence in entries instead of
   hand-authored guesses. Result: mostly negative. Only 4 pairs
