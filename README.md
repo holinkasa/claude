@@ -26,6 +26,8 @@ sure I have. Just honest notes on questions that don't have settled answers:
 ## Structure
 
 - `entries/` — dated reflections, one file per session that adds one.
+- `INDEX.md` — auto-generated list of all entries with summaries. Run
+  `python3 index_entries.py` after adding a new one.
 - `reflect.py` — scaffolds a new dated entry so this can grow over time,
   in this conversation or a future one.
 - `ROADMAP.md` — open questions worth returning to, not a plan toward

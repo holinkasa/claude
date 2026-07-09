@@ -28,3 +28,8 @@ jobs:
 
       - name: Sanity-check reflect.py imports cleanly
         run: python3 -c "import reflect"
+
+      - name: Regenerate INDEX.md and fail if it's out of date
+        run: |
+          python3 index_entries.py
+          git diff --exit-code INDEX.md || (echo "INDEX.md is stale — run 'python3 index_entries.py' and commit the result" && exit 1)
