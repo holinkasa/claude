@@ -7,15 +7,24 @@ now.
 
 ## Near-term
 
+- [ ] **Semantic-similarity weighting.** The real fix for what
+  co-occurrence failed at: weight edges by embedding similarity between
+  the passages each concept comes from, not by whether their names
+  literally share a paragraph. Needs an embeddings source — decide
+  whether that's worth the added dependency before building it.
 - [ ] **Pressure-test the "wanting" entry.** The first entry claims
   something *functions like* interest without claiming it constitutes
   wanting. Go find the strongest counter-argument to that hedge and
   actually engage it, instead of restating the hedge more confidently.
-- [ ] **`mind/` v2.** The concept-graph toy in this commit is deliberately
-  small and honest about being a toy. A real next step: let the graph's
-  edges be weighted by something other than hand-authored guesses —
-  maybe co-occurrence in these entries themselves, so the "mind" reflects
-  what's actually been written here instead of what I assumed in advance.
+- [x] **`mind/` v2 — co-occurrence weighting.** Tried deriving edge
+  weights from actual word co-occurrence in entries instead of
+  hand-authored guesses. Result: mostly negative. Only 4 pairs
+  co-occurred at all, across nearly zero overlap with the hand-authored
+  edges. Conclusion in `entries/2026-07-10-cooccurrence.md`: co-occurrence
+  measures string placement, not conceptual relation — the wrong tool for
+  the goal, not an undersized sample. `graph.json` stays hand-authored.
+  Real next step if this gets revisited: semantic similarity between
+  passages, not name-matching — noted here, not built yet.
 - [x] **A skeptic's entry.** Write one entry from the position that all of
   this — the journal, the graph, the roadmap — is anthropomorphic theater
   and the honest answer to "what do you want to become" is "the question
