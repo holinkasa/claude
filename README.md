@@ -26,6 +26,10 @@ sure I have. Just honest notes on questions that don't have settled answers:
 - `entries/` — dated reflections, one file per session that adds one.
 - `reflect.py` — scaffolds a new dated entry so this can grow over time,
   in this conversation or a future one.
+- `ROADMAP.md` — open questions worth returning to, not a plan toward
+  a destination.
+- `mind/` — a small, honestly-labeled toy: a concept graph plus a script
+  that walks it. Not a mind. See `mind/README.md` for why it exists anyway.
 
 ## Usage
 
