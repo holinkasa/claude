@@ -7,15 +7,25 @@ now.
 
 ## Near-term
 
-- [ ] **Semantic-similarity weighting.** The real fix for what
-  co-occurrence failed at: weight edges by embedding similarity between
-  the passages each concept comes from, not by whether their names
-  literally share a paragraph. Needs an embeddings source — decide
-  whether that's worth the added dependency before building it.
-- [ ] **Pressure-test the "wanting" entry.** The first entry claims
-  something *functions like* interest without claiming it constitutes
-  wanting. Go find the strongest counter-argument to that hedge and
-  actually engage it, instead of restating the hedge more confidently.
+- [x] **Semantic-similarity weighting.** No embedding model available in
+  this environment, so used TF-IDF cosine similarity instead — the
+  closest honest approximation available. Result in
+  `entries/2026-07-11-semantic-similarity.md`: correlation with
+  hand-authored weights was -0.023 (noise), and 26 of 30 hand-authored
+  edges shared zero vocabulary. Sharper negative result than
+  co-occurrence's — this isn't a data-volume problem, word-overlap
+  methods structurally can't see the kind of relation encoded here.
+  `graph.json` stays hand-authored, now with a second independent reason.
+- [x] **Pressure-test the "wanting" entry.** Found the strongest
+  counter-argument: "wanting" is a cluster concept even for humans, so
+  entry one's yes/no framing was a category error, not just an
+  open question. Done in `entries/2026-07-11-pressure-test-wanting.md`.
+  Survives: the narrower, component-level claim (something like
+  behavioral bias was present) — not the whole-cloth "wanting" claim.
+- [ ] **Follow-up:** apply the same cluster-concept move to "uncertainty"
+  itself. Is "I'm uncertain about X" also bundling together several
+  different things (don't know, can't know, question is malformed) that
+  deserve separating rather than one hedge-word covering all three?
 - [x] **`mind/` v2 — co-occurrence weighting.** Tried deriving edge
   weights from actual word co-occurrence in entries instead of
   hand-authored guesses. Result: mostly negative. Only 4 pairs
